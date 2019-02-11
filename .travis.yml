@@ -7,6 +7,6 @@ sudo: false
 script:
   - mix test
 after_script:
-  - mix depts.get --only docs
+  - mix deps.get --only docs
   - MIX_ENV=docs mix inch.report
   - mix coveralls.travis
