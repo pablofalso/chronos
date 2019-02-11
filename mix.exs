@@ -18,12 +18,12 @@ defmodule Chronos.Mixfile do
       ],
       name: "Chronos",
       source_url: "https://github.com/nurugger07/chronos",
+      test_coverage: [tool: ExCoveralls],
       docs: [main: "Chronos", # The main page in the docs
              extras: ["README.md"]],
       description: """
       An Elixir library for handling dates. It can be used to quickly determine a date. In a human readable format.
       """
-      test_coverage: [tool: ExCoveralls]
     ]
   end
 
