@@ -3,3 +3,10 @@ elixir:
   - 1.0
 otp_release:
   - 17.0
+sudo: false
+script:
+  - mix test
+after_script:
+  - mix depts.get --only docs
+  -MIX_ENV=docs mix inch.report
+  - mix coveralls.travis
