@@ -28,7 +28,9 @@ defmodule Chronos.Mixfile do
   end
 
   def deps do
-    [{:ex_doc, ">= 0.0.0", only: :dev},
-     {:excoveralls, "~> 0.4", only: :test}]
+    [
+    {:ex_doc, ">= 0.0.0", only: :dev},
+     {:excoveralls, "~> 0.10", only: :test}
+     ]
   end
 end
