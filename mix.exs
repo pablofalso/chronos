@@ -23,10 +23,12 @@ defmodule Chronos.Mixfile do
       description: """
       An Elixir library for handling dates. It can be used to quickly determine a date. In a human readable format.
       """
+      test_coverage: [tool: ExCoveralls]
     ]
   end
 
   def deps do
-    [{:ex_doc, ">= 0.0.0", only: :dev}]
+    [{:ex_doc, ">= 0.0.0", only: :dev},
+     {:excoveralls, "~> 0.4", only: :test}]
   end
 end
