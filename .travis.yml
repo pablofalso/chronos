@@ -1,6 +1,6 @@
 language: elixir
 elixir:
-  - 1.0.5
+  - 1.4.5
 otp_release:
   - 20.0
 sudo: false
@@ -9,4 +9,3 @@ script:
 after_script:
   - mix deps.get --only docs
   - MIX_ENV=docs mix inch.report
-  - mix coveralls.travis
