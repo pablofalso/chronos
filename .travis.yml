@@ -8,5 +8,5 @@ script:
   - mix test
 after_script:
   - mix depts.get --only docs
-  -MIX_ENV=docs mix inch.report
+  - MIX_ENV=docs mix inch.report
   - mix coveralls.travis
