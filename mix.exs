@@ -30,7 +30,8 @@ defmodule Chronos.Mixfile do
   def deps do
     [
     {:ex_doc, ">= 0.0.0", only: :dev},
-     {:excoveralls, "~> 0.10", only: :test}
+     {:excoveralls, "~> 0.10", only: :test},
+     {:mutation, "~> 0.1.0"}
      ]
   end
 end
