@@ -20,4 +20,13 @@ defmodule TimezonesTest do
     assert "" == abbreviation "BOB"
   end
 
+  test "retrieve the timezone name" do
+    assert "Central Standard Time" == name "CST"
+    assert "Central Standard Time" == name "-6:00"
+    assert "Eastern Standard Time" == name "EST"
+    assert "Eastern Standard Time" == name "-5:00"
+
+    assert "" == name "BOB"
+  end
+
 end
