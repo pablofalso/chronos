@@ -56,7 +56,7 @@ defmodule Chronos.Timezones do
   def name(nil), do: ""
   def name({_, name, _}), do: name
   def name(zone) when is_binary(zone) do
-    @zones |> Enum.find(fn({abbr, _, offset}) -> zone == offset || zone == abbr end) |> abbreviation
+    @zones |> Enum.find(fn({abbr, _, offset}) -> zone == offset || zone == abbr end) |> name
   end
 
 end
