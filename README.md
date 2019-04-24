@@ -91,7 +91,7 @@ end
 ```
 If the date option is set the default date for all functions will be that date.
 
-## Formatting Dates & Times
+## Formatting Dates & Times.
 
 With the addition of Chronos.Formatter, you can begin to format date tuples to something more readable.
 

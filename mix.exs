@@ -31,7 +31,8 @@ defmodule Chronos.Mixfile do
     [
     {:ex_doc, ">= 0.0.0", only: :dev},
      {:excoveralls, "~> 0.10", only: :test},
-     {:mutation, "~> 0.1.0"}
+     {:mutation, "~> 0.1.0"},
+     {:dialyxir, "~> 0.4", only: [:dev]}
      ]
   end
 end
